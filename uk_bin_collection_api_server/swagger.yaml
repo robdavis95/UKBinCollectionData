@@ -50,15 +50,19 @@ paths:
       tags:
         - "System"
       summary: "Health check endpoint"
-      description: "Returns a simple HTML page indicating the API is running"
+      description: "Returns a JSON response indicating the API status"
       produces:
-        - "text/html"
+        - "application/json"
       responses:
         200:
-          description: "API is running"
+          description: "API is healthy"
           schema:
-            type: string
-            
+            type: object
+            properties:
+              status:
+                type: string
+                example: "healthy"
+
   /bin_collection/{council}:
     get:
       operationId: "server.council_data"

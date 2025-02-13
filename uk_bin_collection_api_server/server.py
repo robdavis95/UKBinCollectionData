@@ -49,16 +49,8 @@ def create_app():
 
 
 def health_check():
-    """Basic health check endpoint that returns HTML"""
-    html_content = """
-    <!DOCTYPE html>
-    <html>
-        <body>
-            <h1>health check successful</h1>
-        </body>
-    </html>
-    """
-    return html_content, 200, {'Content-Type': 'text/html'}
+    """Basic health check endpoint that returns JSON"""
+    return {"status": "healthy"}, 200, {'Content-Type': 'application/json'}
 
 
 if __name__ == "__main__":
