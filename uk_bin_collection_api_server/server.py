@@ -48,6 +48,19 @@ def create_app():
     return app
 
 
+def health_check():
+    """Basic health check endpoint that returns HTML"""
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+        <body>
+            <h1>health check successful</h1>
+        </body>
+    </html>
+    """
+    return html_content, 200, {'Content-Type': 'text/html'}
+
+
 if __name__ == "__main__":
     app = create_app()
     app.run(host="0.0.0.0", port=8080)

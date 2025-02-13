@@ -44,6 +44,21 @@ definitions:
 basePath: "/api"
 
 paths:
+  /health:
+    get:
+      operationId: "server.health_check"
+      tags:
+        - "System"
+      summary: "Health check endpoint"
+      description: "Returns a simple HTML page indicating the API is running"
+      produces:
+        - "text/html"
+      responses:
+        200:
+          description: "API is running"
+          schema:
+            type: string
+            
   /bin_collection/{council}:
     get:
       operationId: "server.council_data"
