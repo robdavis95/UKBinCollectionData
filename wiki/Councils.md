@@ -55,6 +55,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [Burnley Borough Council](#burnley-borough-council)
 - [Bury Council](#bury-council)
 - [Calderdale Council](#calderdale-council)
+- [Cambridge City Council](#cambridge-city-council)
 - [Cannock Chase District Council](#cannock-chase-district-council)
 - [Canterbury City Council](#canterbury-city-council)
 - [Cardiff Council](#cardiff-council)
@@ -117,6 +118,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [Flintshire County Council](#flintshire-county-council)
 - [Folkstone and Hythe District Council](#folkstone-and-hythe-district-council)
 - [Forest of Dean District Council](#forest-of-dean-district-council)
+- [Fylde Council](#fylde-council)
 - [Gateshead Council](#gateshead-council)
 - [Gedling Borough Council](#gedling-borough-council)
 - [Glasgow City Council](#glasgow-city-council)
@@ -131,6 +133,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [Harrogate Borough Council](#harrogate-borough-council)
 - [Hart District Council](#hart-district-council)
 - [Hartlepool Borough Council](#hartlepool-borough-council)
+- [Hastings Borough Council](#hastings-borough-council)
 - [Herefordshire Council](#herefordshire-council)
 - [Hertsmere Borough Council](#hertsmere-borough-council)
 - [High Peak Council](#high-peak-council)
@@ -170,6 +173,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [Merton Council](#merton-council)
 - [Mid and East Antrim Borough Council](#mid-and-east-antrim-borough-council)
 - [Mid Devon Council](#mid-devon-council)
+- [Middlesbrough Council](#middlesbrough-council)
 - [Mid Suffolk District Council](#mid-suffolk-district-council)
 - [Mid Sussex District Council](#mid-sussex-district-council)
 - [Midlothian Council](#midlothian-council)
@@ -232,6 +236,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [Shropshire Council](#shropshire-council)
 - [Solihull Council](#solihull-council)
 - [Somerset Council](#somerset-council)
+- [Southampton City Council](#southampton-city-council)
 - [South Ayrshire Council](#south-ayrshire-council)
 - [South Cambridgeshire Council](#south-cambridgeshire-council)
 - [South Derbyshire District Council](#south-derbyshire-district-council)
@@ -245,6 +250,7 @@ This document is still a work in progress, don't worry if your council isn't lis
 - [South Staffordshire District Council](#south-staffordshire-district-council)
 - [South Tyneside Council](#south-tyneside-council)
 - [Southwark Council](#southwark-council)
+- [Spelthorne Borough Council](#spelthorne-borough-council)
 - [St Albans City and District Council](#st-albans-city-and-district-council)
 - [St Helens Borough Council](#st-helens-borough-council)
 - [Stafford Borough Council](#stafford-borough-council)
@@ -577,11 +583,10 @@ Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/searc
 
 ### Bexley Council
 ```commandline
-python collect_data.py BexleyCouncil https://mybexley.bexley.gov.uk/service/When_is_my_collection_day -s -u XXXXXXXX -p "XXXX XXX" -n XX -w http://HOST:PORT/
+python collect_data.py BexleyCouncil https://waste.bexley.gov.uk/waste -s -p "XXXX XXX" -n XX -w http://HOST:PORT/
 ```
 Additional parameters:
 - `-s` - skip get URL
-- `-u` - UPRN
 - `-p` - postcode
 - `-n` - house number
 - `-w` - remote Selenium web driver URL (required for Home Assistant)
@@ -742,16 +747,14 @@ Note: Pass the house number and postcode in their respective parameters.
 
 ### Brighton and Hove City Council
 ```commandline
-python collect_data.py BrightonandHoveCityCouncil https://cityclean.brighton-hove.gov.uk/link/collections -s -u XXXXXXXX -p "XXXX XXX" -n XX -w http://HOST:PORT/
+python collect_data.py BrightonandHoveCityCouncil https://cityclean.brighton-hove.gov.uk/link/collections -n "XXXXXX XXXX XXXX" -p "XXXX XXX" -w http://HOST:PORT/wd/hub
 ```
 Additional parameters:
-- `-s` - skip get URL
-- `-u` - UPRN
-- `-p` - postcode
 - `-n` - house number
+- `-p` - postcode
 - `-w` - remote Selenium web driver URL (required for Home Assistant)
 
-Note: Use the full address as it appears on the drop-down on the site when you search by postcode.
+Note: Use the full address as it appears on the drop-down on the site when you search by house number.
 
 ---
 
@@ -864,6 +867,17 @@ Additional parameters:
 - `-w` - remote Selenium web driver URL (required for Home Assistant)
 
 Note: Pass the UPRN and postcode. To get the UPRN, you can use [FindMyAddress](https://www.findmyaddress.co.uk/search).
+
+---
+
+### Cambridge City Council
+```commandline
+python collect_data.py CambridgeCityCouncil https://www.cambridge.gov.uk/ -u XXXXXXXX
+```
+Additional parameters:
+- `-u` - UPRN
+
+Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN.
 
 ---
 
@@ -1604,6 +1618,17 @@ Note: Pass the full address in the house number and postcode parameters. This pa
 
 ---
 
+### Fylde Council
+```commandline
+python collect_data.py FyldeCouncil https://www.fylde.gov.uk -u XXXXXXXX
+```
+Additional parameters:
+- `-u` - UPRN
+
+Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN.
+
+---
+
 ### Gateshead Council
 ```commandline
 python collect_data.py GatesheadCouncil https://www.gateshead.gov.uk/ -s -p "XXXX XXX" -n XX -w http://HOST:PORT/
@@ -1773,6 +1798,17 @@ Additional parameters:
 - `-u` - UPRN
 
 Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find your UPRN.
+
+---
+
+### Hastings Borough Council
+```commandline
+python collect_data.py HastingsBoroughCouncil https://www.hastings.gov.uk -u XXXXXXXX
+```
+Additional parameters:
+- `-u` - UPRN
+
+Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN.
 
 ---
 
@@ -2235,6 +2271,19 @@ Additional parameters:
 - `-u` - UPRN
 
 Note: You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN.
+
+---
+
+### Middlesbrough Council
+```commandline
+python collect_data.py MiddlesbroughCouncil https://www.midsussex.gov.uk/waste-recycling/bin-collection/ -s -n XX -w http://HOST:PORT/
+```
+Additional parameters:
+- `-s` - skip get URL
+- `-n` - house number
+- `-w` - remote Selenium web driver URL (required for Home Assistant)
+
+Note: Pass the entire address without postcode as it appears when you type it on the website. This parser requires a Selenium webdriver.
 
 ---
 
@@ -2972,6 +3021,18 @@ Note: Provide your UPRN and postcode. Find your UPRN using [FindMyAddress](https
 
 ---
 
+### Southampton City Council
+```commandline
+python collect_data.py SouthamptonCityCouncil https://www.southampton.gov.uk -s -u XXXXXXXX
+```
+Additional parameters:
+- `-s` - skip get URL
+- `-u` - UPRN
+
+Note: Pass the UPRN. You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search).
+
+---
+
 ### South Ayrshire Council
 ```commandline
 python collect_data.py SouthAyrshireCouncil https://www.south-ayrshire.gov.uk/ -s -u XXXXXXXX -p "XXXX XXX"
@@ -3122,6 +3183,17 @@ Additional parameters:
 - `-u` - UPRN
 
 Note: Replace `XXXXXXXX` with your UPRN. Use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find your UPRN.
+
+---
+
+### Spelthorne Borough Council
+```commandline
+python collect_data.py SpelthorneBoroughCouncil https://www.spelthorne.gov.uk -s -p "XXXX XXX" -n XX
+```
+Additional parameters:
+- `-s` - skip get URL
+- `-p` - postcode
+- `-n` - house number
 
 ---
 
@@ -3867,14 +3939,13 @@ Note: Provide your UPRN and postcode. Find your UPRN using [FindMyAddress](https
 
 ### Wyre Council
 ```commandline
-python collect_data.py WyreCouncil https://www.wyre.gov.uk/bins-rubbish-recycling -s -u XXXXXXXX -p "XXXX XXX"
+python collect_data.py WyreCouncil https://www.wyre.gov.uk/bins-rubbish-recycling -s -u XXXXXXXX
 ```
 Additional parameters:
 - `-s` - skip get URL
 - `-u` - UPRN
-- `-p` - postcode
 
-Note: Provide your UPRN and postcode. Find your UPRN using [FindMyAddress](https://www.findmyaddress.co.uk/search). The postcode should be wrapped in double quotes with a space in the middle.
+Note: Provide your UPRN. Find your UPRN using [FindMyAddress](https://www.findmyaddress.co.uk/search).
 
 ---
 

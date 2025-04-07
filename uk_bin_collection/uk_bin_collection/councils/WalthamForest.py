@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
 from uk_bin_collection.uk_bin_collection.common import *
@@ -26,7 +25,7 @@ class CouncilClass(AbstractGetBinDataClass):
             page = "https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-d62ccdd2-3de9-48eb-a229-8e20cbdd6393/AF-Stage-8bf39bf9-5391-4c24-857f-0dc2025c67f4/definition.json&process=1&process_uri=sandbox-processes://AF-Process-d62ccdd2-3de9-48eb-a229-8e20cbdd6393&process_id=AF-Process-d62ccdd2-3de9-48eb-a229-8e20cbdd6393"
 
             user_postcode = kwargs.get("postcode")
-            user_uprn = kwargs.get("uprn")
+            # user_uprn = kwargs.get("uprn")
             user_paon = kwargs.get("paon")
             web_driver = kwargs.get("web_driver")
             headless = kwargs.get("headless")
@@ -71,13 +70,13 @@ class CouncilClass(AbstractGetBinDataClass):
             )
 
             find_ac_button.send_keys(Keys.RETURN)
-            h4_element = wait.until(
+            wait.until(
                 EC.presence_of_element_located(
                     (By.XPATH, "//h4[contains(text(), 'Next Collections')]")
                 )
             )
 
-            data_table = WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located(
                     (
                         By.XPATH,

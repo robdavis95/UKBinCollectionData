@@ -1,4 +1,80 @@
 =======
+## 0.139.0 (2025-04-07)
+
+### Feat
+
+- adding #1037
+- adding #1032 North Devon Count Council
+
+### Fix
+
+- #1296 Forest of dean
+- 939 adding South Holland District Council - Lincolnshire UK
+
+## 0.138.1 (2025-04-05)
+
+### Fix
+
+- Walhtam forest council - revert previous changes
+
+## 0.138.0 (2025-04-05)
+
+### Feat
+
+- Adding Hastings Borough Council
+- Adding Fylde Council
+
+### Fix
+
+- #1249
+- #1039
+fix: #1181
+fix: #1266
+fix: #1274
+- Gloucester City Council
+- #1282
+- Mid Devon Council
+- #1277
+fix: #1287
+- West Oxfordshire Council
+- #1290
+
+## 0.137.0 (2025-04-05)
+
+### Feat
+
+- #816 adding trafford council
+
+## 0.136.0 (2025-03-24)
+
+### Feat
+
+- Adding Southampton City Council
+- Adding Cambridge City Council
+- Adding Spelthorne Borough Council
+
+### Fix
+
+- #1057
+- #1264
+- #1270
+- Bexley Council
+- #1256
+- HinckleyandBosworthBoroughCouncil
+- #1207
+- Hackney Council
+- #1230
+- Castlepoint District Council
+- #1252
+- Canterbury City Council
+- #1254
+
+## 0.135.4 (2025-03-24)
+
+### Fix
+
+- parse scheduleCodeWorkflowIDs instead of scheduleCodeWorkflowID for Hackney Council
+
 ## 0.135.3 (2025-02-23)
 
 ## 0.135.2 (2025-02-19)

@@ -162,11 +162,10 @@
         "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN."
     },
     "BexleyCouncil": {
-        "house_number": "1 Dorchester Avenue, Bexley",
+        "house_number": "1",
         "postcode": "DA5 3AH",
         "skip_get_url": true,
-        "uprn": "100020196143",
-        "url": "https://mybexley.bexley.gov.uk/service/When_is_my_collection_day",
+        "url": "https://waste.bexley.gov.uk/waste",
         "web_driver": "http://selenium:4444",
         "wiki_name": "Bexley Council",
         "wiki_note": "In order to use this parser, you will need to sign up to [Bexley's @Home app](https://www.bexley.gov.uk/services/rubbish-and-recycling/bexley-home-recycling-app/about-app). Complete the setup by entering your email and setting your address with postcode and address line. Once you can see the calendar, you should be good to run the parser. Just pass the email you used in quotes in the UPRN parameter."
@@ -345,6 +344,12 @@
         "wiki_name": "Calderdale Council",
         "wiki_note": "Pass the UPRN and postcode. To get the UPRN, you can use [FindMyAddress](https://www.findmyaddress.co.uk/search)."
     },
+    "CambridgeCityCouncil": {
+        "uprn": "200004159750",
+        "url": "https://www.cambridge.gov.uk/",
+        "wiki_name": "Cambridge City Council",
+        "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN."
+    },
     "CannockChaseDistrictCouncil": {
         "postcode": "WS15 1JA",
         "skip_get_url": true,
@@ -380,6 +385,14 @@
         "url": "https://apps.castlepoint.gov.uk/cpapps/index.cfm?fa=wastecalendar",
         "wiki_name": "Castlepoint District Council",
         "wiki_note": "For this council, 'uprn' is actually a 4-digit code for your street. Go [here](https://apps.castlepoint.gov.uk/cpapps/index.cfm?fa=wastecalendar) and inspect the source of the dropdown box to find the 4-digit number for your street."
+    },
+    "CeredigionCountyCouncil":{
+        "house_number":"BLAEN CWMMAGWR, TRISANT, CEREDIGION, SY23 4RQ",
+        "postcode":"SY23 4RQ",
+        "url":"https://www.ceredigion.gov.uk/resident/bins-recycling/",
+        "web_driver":"http://selenium:4444",
+        "wiki_name":"Ceredigion County Council",
+        "wiki_note":"House Number is the full address as it appears on the drop-down on the site when you search by postcode. This parser requires a Selenium webdriver."
     },
     "CharnwoodBoroughCouncil": {
         "url": "https://my.charnwood.gov.uk/location?put=cbc10070067259&rememberme=0&redirect=%2F",
@@ -795,6 +808,13 @@
         "wiki_name": "Forest of Dean District Council",
         "wiki_note": "Pass the full address in the house number and postcode parameters. This parser requires a Selenium webdriver."
     },
+    "FyldeCouncil": {
+        "uprn": "100010402452",
+        "url": "https://www.fylde.gov.uk",
+        "wiki_command_url_override": "https://www.fylde.gov.uk",
+        "wiki_name": "Fylde Council",
+        "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN."
+    },
     "GatesheadCouncil": {
         "house_number": "Bracken Cottage",
         "postcode": "NE16 5LQ",
@@ -827,7 +847,13 @@
         "wiki_name": "Gloucester City Council",
         "wiki_note": "Pass the house number, postcode, and UPRN in their respective parameters. This parser requires a Selenium webdriver."
     },
-    "GraveshamBoroughCouncil": {
+    "GooglePublicCalendarCouncil": {
+        "wiki_name": "Google Calendar (Public)",
+        "url": "https://calendar.google.com/calendar/ical/c_bca6c975545213622b3958bddab567e1e7398709c63e377b6fe9a9140bd1caf8%40group.calendar.google.com/public/basic.ics",
+        "skip_get_url": true,
+        "wiki_note": "The URL should be the public ics file URL for the public Google calendar. See https://support.google.com/calendar/answer/37083?sjid=7202815583021446882-EU. Councils that currently need this are Trafford."
+    },
+        "GraveshamBoroughCouncil": {
         "skip_get_url": true,
         "uprn": "100060927046",
         "url": "https://www.gravesham.gov.uk",
@@ -899,6 +925,13 @@
         "url": "https://www.hartlepool.gov.uk",
         "wiki_name": "Hartlepool Borough Council",
         "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find your UPRN."
+    },
+    "HastingsBoroughCouncil": {
+        "uprn": "100060038877",
+        "url": "https://www.hastings.gov.uk",
+        "wiki_command_url_override": "https://www.hastings.gov.uk",
+        "wiki_name": "Hastings Borough Council",
+        "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN."
     },
     "HerefordshireCouncil": {
         "url": "https://www.herefordshire.gov.uk/rubbish-recycling/check-bin-collection-day?blpu_uprn=10096232662",
@@ -1302,6 +1335,16 @@
         "wiki_name": "North Ayrshire Council",
         "wiki_note": "You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find the UPRN."
     },
+    "NorthDevonCountyCouncil":{
+        "house_number": "1",
+        "uprn": "100040249471",
+        "postcode": "EX31 2LE",
+        "skip_get_url": true,
+        "url": "https://my.northdevon.gov.uk/service/WasteRecyclingCollectionCalendar",
+        "web_driver": "http://selenium:4444",
+        "wiki_name": "North Devon County Council",
+        "wiki_note": "Pass the house number and postcode in their respective parameters. This parser requires a Selenium webdriver."
+    },
     "NorthEastDerbyshireDistrictCouncil": {
         "postcode": "S42 5RB",
         "skip_get_url": true,
@@ -1647,6 +1690,13 @@
         "wiki_name": "Somerset Council",
         "wiki_note": "Provide your UPRN and postcode. Find your UPRN using [FindMyAddress](https://www.findmyaddress.co.uk/search)."
     },
+    "SouthamptonCityCouncil": {
+        "skip_get_url": true,
+        "uprn": "100060731893",
+        "url": "https://www.southampton.gov.uk",
+        "wiki_name": "Southampton City Council",
+        "wiki_note": "Pass the UPRN. You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search)."
+    },
     "SouthAyrshireCouncil": {
         "postcode": "KA19 7BN",
         "skip_get_url": true,
@@ -1682,6 +1732,16 @@
         "url": "https://www.southhams.gov.uk",
         "wiki_name": "South Hams District Council",
         "wiki_note": "Use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find your UPRN."
+    },
+    "SouthHollandDistrictCouncil": {
+        "house_number": "1",
+        "postcode": "PE6 0HE",
+        "uprn": "100030872493",
+        "skip_get_url": true,
+        "url": "https://www.sholland.gov.uk/mycollections",
+        "web_driver": "http://selenium:4444",
+        "wiki_name": "South Holland District Council",
+        "wiki_note": "Pass the UPRN and postcode in their respective parameters. This parser requires a Selenium webdriver."
     },
     "SouthKestevenDistrictCouncil": {
         "house_number": "2 Althorpe Close, Market Deeping, PE6 8BL",
@@ -1739,6 +1799,13 @@
         "wiki_command_url_override": "https://services.southwark.gov.uk/bins/lookup/XXXXXXXX",
         "wiki_name": "Southwark Council",
         "wiki_note": "Replace `XXXXXXXX` with your UPRN. Use [FindMyAddress](https://www.findmyaddress.co.uk/search) to find your UPRN."
+    },
+    "SpelthorneBoroughCouncil": {
+        "house_number": "1",
+        "postcode": "TW18 2PR",
+        "skip_get_url": true,
+        "url": "https://www.spelthorne.gov.uk",
+        "wiki_name": "Spelthorne Borough Council"
     },
     "StAlbansCityAndDistrictCouncil": {
         "skip_get_url": true,
