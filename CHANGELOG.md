@@ -1,4 +1,56 @@
 =======
+## 0.142.0 (2025-04-13)
+
+### Feat
+
+- Added Stirling Council
+
+### Fix
+
+- typo in input.json
+
+## 0.141.4 (2025-04-13)
+
+### Fix
+
+- #1304 - sesnors goes to unknown if the data is blank from councils who are less reliable
+
+## 0.141.3 (2025-04-13)
+
+### Fix
+
+- Newham council
+
+## 0.141.2 (2025-04-13)
+
+### Fix
+
+- Newham council
+- Newham council
+
+## 0.141.1 (2025-04-12)
+
+### Fix
+
+- missing finally block on selenium tests
+
+## 0.141.0 (2025-04-12)
+
+### Feat
+
+- #1185 Adding PeterboroughCity Council
+
+## 0.140.0 (2025-04-11)
+
+### Feat
+
+- Added Broadland District Council
+
+### Fix
+
+- cleanup of council file
+- added Broadland to input.json
+
 ## 0.139.0 (2025-04-07)
 
 ### Feat
