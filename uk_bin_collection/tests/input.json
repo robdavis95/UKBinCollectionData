@@ -866,8 +866,7 @@
         "wiki_note": "Pass the house number, postcode, and UPRN in their respective parameters. This parser requires a Selenium webdriver."
     },
     "GooglePublicCalendarCouncil": {
-        "skip_get_url": true,
-        "url": "https://calendar.google.com/calendar/ical/c_bca6c975545213622b3958bddab567e1e7398709c63e377b6fe9a9140bd1caf8%40group.calendar.google.com/public/basic.ics",
+        "url": "https://calendar.google.com/calendar/ical/0d775884b4db6a7bae5204f06dae113c1a36e505b25991ebc27c6bd42edf5b5e%40group.calendar.google.com/public/basic.ics",
         "wiki_name": "Google Calendar (Public)",
         "wiki_note": "The URL should be the public ics file URL for the public Google calendar. See https://support.google.com/calendar/answer/37083?sjid=7202815583021446882-EU. Councils that currently need this are Trafford."
     },
@@ -877,6 +876,15 @@
         "url": "https://www.gravesham.gov.uk",
         "wiki_name": "Gravesham Borough Council",
         "wiki_note": "Pass the UPRN. You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search)."
+    },
+    "GreatYarmouthBoroughCouncil": {
+        "postcode": "NR31 7EB",
+        "skip_get_url": true,
+        "uprn": "100090834792",
+        "url": "https://myaccount.great-yarmouth.gov.uk/article/6456/Find-my-waste-collection-days",
+        "web_driver": "http://selenium:4444",
+        "wiki_name": "Great Yarmouth Borough Council",
+        "wiki_note": "Pass the postcode, and UPRN in their respective parameters. This parser requires a Selenium webdriver."
     },
     "GuildfordCouncil": {
         "house_number": "THE LODGE, PUTTENHAM HILL HOUSE, PUTTENHAM HILL, PUTTENHAM, GUILDFORD, GU3 1AH",
@@ -1045,7 +1053,7 @@
         "wiki_note": "Provide your UPRN. Find your UPRN using [FindMyAddress](https://www.findmyaddress.co.uk/search)."
     },
     "KnowsleyMBCouncil": {
-        "house_number": "22",
+        "house_number": "2 ALTMOOR ROAD HUYTON L36 3UY",
         "postcode": "L36 3UY",
         "skip_get_url": true,
         "url": "https://knowsleytransaction.mendixcloud.com/link/youarebeingredirected?target=bincollectioninformation",
@@ -1268,6 +1276,15 @@
         "url": "https://www.midlothian.gov.uk/info/1054/bins_and_recycling/343/bin_collection_days",
         "wiki_name": "Midlothian Council",
         "wiki_note": "Pass the house name/number wrapped in double quotes along with the postcode parameter."
+    },
+    "MidUlsterDistrictCouncil": {
+        "house_number": "20 HILLHEAD, STEWARTSTOWN, BT71 5HY",
+        "postcode": "BT71 5HY",
+        "skip_get_url": true,
+        "url": "https://www.midulstercouncil.org",
+        "web_driver": "http://selenium:4444",
+        "wiki_name": "Mid Ulster District Council",
+        "wiki_note": "Pass the full address of the house postcode as displayed on the site. This parser requires a Selenium webdriver."
     },
     "MiltonKeynesCityCouncil": {
         "uprn": "25109551",
@@ -1580,14 +1597,14 @@
         "wiki_note": "To get the UPRN, you can use [FindMyAddress](https://www.findmyaddress.co.uk/search). This parser requires a Selenium webdriver."
     },
     "RenfrewshireCouncil": {
-        "house_number": "1",
-        "paon": "1",
-        "postcode": "PA29ED",
-        "skip_get_url": false,
-        "url": "https://www.renfrewshire.gov.uk/article/2320/Check-your-bin-collection-day",
+        "house_number": "1, STATIONHOUSE DRIVE, JOHNSTONE, RENFREWSHIRE, PA6 7FJ",
+        "paon": "1, STATIONHOUSE DRIVE, JOHNSTONE, RENFREWSHIRE, PA6 7FJ",
+        "postcode": "PA6 7FJ",
+        "skip_get_url": true,
+        "url": "https://www.renfrewshire.gov.uk/bin-day",
         "web_driver": "http://selenium:4444",
         "wiki_name": "Renfrewshire Council",
-        "wiki_note": "Pass the house name/number and postcode in their respective parameters. This parser requires a Selenium webdriver."
+        "wiki_note": "Pass the full address as it appears on the website. This parser requires a Selenium webdriver."
     },
     "RhonddaCynonTaffCouncil": {
         "skip_get_url": true,
@@ -1669,7 +1686,7 @@
     },
     "SandwellBoroughCouncil": {
         "skip_get_url": true,
-        "uprn": "10008755549",
+        "uprn": "32101971",
         "url": "https://www.sandwell.gov.uk",
         "wiki_name": "Sandwell Borough Council",
         "wiki_note": "Pass the UPRN. You will need to use [FindMyAddress](https://www.findmyaddress.co.uk/search)."

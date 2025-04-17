@@ -1,4 +1,63 @@
 =======
+## 0.144.2 (2025-04-17)
+
+### Fix
+
+- knowsley
+- knowsley
+- knowsley
+- knowsley
+- KnowsleyMBCouncil.py
+- #1220 adding Mid Ulster District Council
+
+## 0.144.1 (2025-04-17)
+
+### Fix
+
+- fix Sandwell garden waste collection date
+
+## 0.144.0 (2025-04-17)
+
+### Feat
+
+- added great yarmouth
+
+## 0.143.6 (2025-04-17)
+
+### Fix
+
+- Renfrewshire Council
+
+## 0.143.5 (2025-04-17)
+
+### Fix
+
+- Google Cal
+
+## 0.143.4 (2025-04-17)
+
+### Fix
+
+- Google Cal
+
+## 0.143.3 (2025-04-15)
+
+### Fix
+
+- #1301 Fix Leeds Council
+
+## 0.143.2 (2025-04-15)
+
+### Fix
+
+- #1301 Fix Leeds Council
+
+## 0.143.1 (2025-04-15)
+
+### Fix
+
+- Set the bin_type when different day
+
 ## 0.143.0 (2025-04-13)
 
 ### Fix
