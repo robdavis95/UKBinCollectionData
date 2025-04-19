@@ -1,4 +1,56 @@
 =======
+## 0.147.2 (2025-04-18)
+
+### Fix
+
+- wait for element to be clickable
+
+## 0.147.1 (2025-04-18)
+
+### Fix
+
+- #1351 - moved geopandas to petry dev
+
+## 0.147.0 (2025-04-18)
+
+### Feat
+
+- add council tests results map
+
+## 0.146.2 (2025-04-18)
+
+### Fix
+
+- adding map checking and matching
+
+## 0.146.1 (2025-04-18)
+
+### Fix
+
+- more robust bank holiday handling
+
+## 0.146.0 (2025-04-18)
+
+### Feat
+
+- #1342 Adding Includes Trafford, Clackmannanshire, Havant, North Warwickshire, Newry Mourne and Down, East Dunbartonshire, Pendle, Torfaen, East Hampshire, Ribble Valley, Brentwood, Isle of Wight, Westmorland and Furness, Derry and Strabane, and Norwich. Google Cal support for PDF councils via ICS file
+
+### Fix
+
+- Black reformatting
+
+## 0.145.0 (2025-04-18)
+
+### Feat
+
+- Adding PDF councils
+
+## 0.144.4 (2025-04-18)
+
+### Fix
+
+- Bristol #1275
+
 ## 0.144.3 (2025-04-17)
 
 ### Fix
